@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Tahoma;
+}
+ .main-stuff {
+     margin: 20px 15%;
+     width: 300px;
+     border: 2px solid grey;
+     border-radius: 10%;
+     position: absolute;
+     top: 0;
+ }
+
+ #doombar {
+     width: 80%;
+     position: fixed;
+     bottom: 0;
+     padding: 0;
+     margin: 0 10%;
+
+ }
+
+.navigation #star {
+    width: 40px;
+    animation: starspin linear infinite;
+    transform-origin: 50% 50%;
+    animation-duration: 2s;
+}
+
+.navigation {
+    border: 2px solid grey;
+    padding: 5px;
+    width: 250px;
+    margin: 20px 20px 0 0;
+    font-size: 30px;
+    border-radius: 10%;
+}
+
+ .navigation a {
+     display: flex;
+     flex-direction: row;
+     text-decoration: none;
+     flex-wrap: wrap;
+     color: white;
+     padding: 5px 0;
+ }
+
+    .navigation a:hover {
+        color: darkred;
+        text-decoration: none;
+        animation-play-state: paused;
+    }
+
+ @keyframes starspin{
+     0% {
+         transform: rotate(0deg);
+     }
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ #pika {
+     margin: 0 10%;
+ }
