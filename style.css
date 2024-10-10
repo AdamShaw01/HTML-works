@@ -1,66 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: black;
+    background-image: url("Assets/background4.jpg");
+    background-repeat: repeat;
+    font-family: sans-serif;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.title {
+    text-align: center;
     color: white;
-    font-family: Tahoma;
-}
- .main-stuff {
-     margin: 20px 15%;
-     width: 300px;
-     border: 2px solid grey;
-     border-radius: 10%;
-     position: absolute;
-     top: 0;
- }
-
- #doombar {
-     width: 80%;
-     position: fixed;
-     bottom: 0;
-     padding: 0;
-     margin: 0 10%;
-
- }
-
-.navigation #star {
-    width: 40px;
-    animation: starspin linear infinite;
-    transform-origin: 50% 50%;
-    animation-duration: 2s;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 2vh;
 }
 
-.navigation {
-    border: 2px solid grey;
-    padding: 5px;
-    width: 250px;
-    margin: 20px 20px 0 0;
-    font-size: 30px;
-    border-radius: 10%;
+.main {
+    margin: 0 auto;
+    width: 40vw;
+    color: #171811;
+    border: 2px solid #171811;
+    background-color: #909669;
+    position: relative;
+    top: 5vh;
 }
 
- .navigation a {
-     display: flex;
-     flex-direction: row;
-     text-decoration: none;
-     flex-wrap: wrap;
-     color: white;
-     padding: 5px 0;
- }
+.main h3 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
 
-    .navigation a:hover {
-        color: darkred;
+.main p {
+    padding: 8px;
+    padding-top: 0;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.navbar {
+    border: 2px solid #171811;
+    background-color: #909669;
+    width: 40vw;
+    position: relative;
+    margin: 0 auto;
+    top: 5vh;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navblock {
+    border-right: 2px solid #171811;
+    width: 25%;
+    padding: 2px;
+}
+
+#navblock:nth-of-type(4) {
+    border-right: none;
+}
+
+.navbar a {
         text-decoration: none;
-        animation-play-state: paused;
+        color: #171811;
+}
+
+    .navbar a:hover {
+        color: white;
+        text-decoration: none;
     }
 
- @keyframes starspin{
-     0% {
-         transform: rotate(0deg);
-     }
-     100% {
-         transform: rotate(360deg);
-     }
- }
+.construction {
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    top: 10vh;
+    display: flex;
+    align-content: center;
+}
 
- #pika {
-     margin: 0 10%;
- }
+#doom {
+    font-size: 200px;
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 25vh;
+}
